@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<!--
+<html>
+    <head>
+        <title>
+
+        </title>
+        
+            
+        <style>
+            body {
+                background-color: black;
+                height: 2000px;
+            }
+            .topbar{
+                height: 80px;
+                width: 100%;
+                background-color: thistle;
+                position: fixed;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+            }
+            .logo{
+                height: 60px;
+                width: 60px;
+                margin: 2px 5px 5px 5px;
+                border-radius: 100%;
+                
+            }
+            .searchbox{
+                flex: 1;
+                height: 30px;
+                max-width: 300px;
+                border-radius: 20px;
+                border: none;
+                margin: 5px 5px 5px 20px;
+                padding: 5px 5px 5px 5px;
+            }
+            .middle{
+                flex: 1;
+                max-width: 700px;
+                display: flex;
+                justify-content: left;
+                background-color: blue;
+            }
+            
+            .right{
+                background-color: green;
+                width: 300px;
+                height: 50px;
+            }
+            .upload {
+    height: 24px;
+}
+.apps {
+    height: 24px;
+}
+.notification {
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+}
+.notifiaction-number{
+    
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: -1px;
+    right: -6px;
+    background-color: rgb(199, 3, 3);
+    object-fit: cover;
+    padding-left: 5px;
+    padding-top: 1px;
+    padding-right:3px ;
+
+    height: 13px;
+    width: 7px;
+    border-width: 2px;
+    border: solid;
+    border-color: white;
+
+    border-radius: 100%;
+    
+}
+.notification .tooltip{
+    position: absolute;
+    background-color: rgb(99, 99, 99);
+    padding: 8px;
+   
+    
+    
+    margin-left: -30px;
+    padding: 8px;
+    bottom: -48px;
+    
+    font-size: 12px;
+    border-radius: 3px;
+    opacity: 0;
+    transition: 0.1s;
+    pointer-events: none;
+    color: white;
+    
+    
+}
+.notification:hover .tooltip{
+    opacity: 1;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="topbar">
+            <div class="logo">
+                <img class="logo" src="photos/download.png">
+            </div>
+            <div class = "middle">
+                <input class="searchbox" type="text" placeholder="Search here">
+            </div>
+            <div class="right">
+                <div class="notification">
+                    <img class="upload" src="icons/notifications.svg">
+    
+                    <div class="notifiaction-number">
+                        2
+                    </div>
+                    <div class="tooltip">Notifocations</div>
+    
+                </div>
+            </div>
+
+
+        </div>
+
+    </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="SElogin.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@300..700&display=swap" rel="stylesheet">
+
+    <style>
+
+        
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="login">
+        <div class = "outer_login">
+
+        
+            <div class="top">
+                <div class="logo">
+                Sociogram
+
+                </div>
+                <div>
+                    <input class="userid" type="text" placeholder="Phone number, Username, or email">
+                </div>
+                <div>
+                    <input class="password" type="password" placeholder="Password">
+                </div>
+                <div> 
+                    <a href="http://127.0.0.1:5502/youtube2.html">
+                    <button class="login-button" 
+                    onclick="
+                        
+                            alert('Login Successful!');
+                        ">
+                        Log in
+                    </button>
+                    </a>
+
+                </div>
+                <div class="or">
+
+                    <div style="color: rgb(0, 0, 0, 0.2);">____________</div>
+                    <div class="OR">OR</div>
+                    <div style="color: rgb(0, 0, 0, 0.2);">____________</div>
+
+                </div>
+                <div>
+                    <a style="text-decoration: none;" href="https://www.facebook.com/login/">
+                        <button class="facebook-button">
+                            <img class="facebook-logo" src="facebook-logo.png">
+                            <div class="facebook">Log in with Facebook</div>
+
+                        </button>
+                    </a>
+                </div>
+                <div class="forgot-password">
+                    Forgot password?
+                </div>
+
+
+            </div>
+
+            <div class="middle">
+                <div class="signup">
+                    Don't have an account?
+                    <a class="signup-button" href="http://127.0.0.1:5502/SE%20/Signup/signup.html">
+                        Sign up
+                    </a>
+                </div>
+
+            </div>
+            <div class="bottom">
+                <div class="get-the-app">
+                    Get the app.
+
+                </div>
+                <div class="apps">
+                    <div class="apple">
+                        <img class="apple-icon" src="download.png">
+                        <div style="display: flex; flex-direction: column;">
+                            <div style="font-size: 10px;
+                        color: rgb(220, 220, 220);
+                        ">Download on the </div>
+                            <div class="app-store">App Store</div>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="apple">
+
+                        <img class="google-icon"
+                            src="HD-wallpaper-google-play-android-black-cool-diamonds-material-star-store.jpg">
+                        <div style="display: flex; flex-direction: column;">
+                            <div style="font-size: 8px;
+                        color: rgb(220, 220, 220);
+                        ">GET IT ON</div>
+                            <div class="google-play">Google Play</div>
+
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+        </div>
+        <div class="image">
+            <img class="image" src="Screenshot 2024-04-01 at 11.53.14 AM.png">
+        </div>
+        </div>
+    </div>
+    <script>
+        //alert('hello');
+        /*
+        ghbhubb
+        */
+        console.log(2 + 2)
+        console.log(`some  text`)
+    </script>
+
+
+
+
+</body>
+
+</html>
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles/video.css">
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/sidebar.css">
+    <title>Sociogram</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        body {
+            padding-top: 64px;
+            padding-left: 96px;
+            padding-right: 20px;
+            margin: 0;
+            background-color: rgb(249, 249, 249);
+            font-family: Roboto;
+        }
+
+        .video-time {
+            position: absolute;
+            font-size: 12px;
+            font-weight: bold;
+            
+            background-color: black;
+            color: white;
+            bottom: 15px;
+            right: 5px;
+            border-radius: 3px;
+            padding: 3px;
+
+        }
+        .channel-info{
+            position: relative;
+           
+            height: 39px;
+
+        }
+        .channel-info .tooltip{
+            display: flex;
+            flex-direction: row;
+            width: 190px;
+            height: 45px;
+            border-radius: 8px;
+            border: solid;
+            border-color: rgb(0, 0, 0,0.1);
+            box-shadow: 0 0 5px 2px rgb(0, 0, 0,0.1);
+            background-color: white;
+            padding: 10px;
+            opacity: 0;
+            pointer-events: none;
+            transition: 0.5s;
+            
+           
+
+        }
+        .channel-info:hover .tooltip{
+            opacity: 1;
+        }
+        .channel-info .tooltip .channel-photo{
+            width: 45px;
+            height: 45px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+
+        <div class="left">
+            <img class="menuimg" src="icons/hamburger-menu.svg">
+            <img class="youtubeimg" src="icons/amd.svg">
+
+
+
+        </div>
+        <div class="middle">
+            <input class="search" type="text" placeholder="Search">
+            <button class="search-button">
+                <img class="search-icon" src="icons/search.svg">
+                <div class="tooltip">Search</div>
+            </button>
+            <button class="voice-search-button">
+                <img class="voice-search" src="icons/voice-search-icon.svg">
+                <div class="tooltip">Search with your voice</div>
+            </button>
+
+
+        </div>
+        <div class="right">
+            <img class="upload" src="icons/upload.svg">
+            <img class="apps" src="icons/youtube-apps.svg">
+            <div class="notification">
+                <img class="upload" src="icons/notifications.svg">
+
+                <div class="notifiaction-number">
+                    2
+                </div>
+                <div class="tooltip">Notifocations</div>
+
+            </div>
+            <img class="myprofile" src="channel logo/my-channel.jpeg">
+        </div>
+
+    </header>
+    <nav class="sidebar">
+        <div class="sidebar-link">
+            <img src="sidebar/home.svg">
+            <div>Home</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="sidebar/explore.svg">
+            <div>Explore</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="sidebar/subscriptions.svg">
+            <div>Subscriptions</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="sidebar/originals.svg">
+            <div>Originals</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="sidebar/youtube-music.svg">
+            <div>YouTube Music</div>
+        </div>
+        <div class="sidebar-link">
+            <img src="sidebar/library.svg">
+            <div>Library</div>
+        </div>
+    </nav>
+
+
+
+    <main class="video-grid">
+
+
+
+        <section class="video-preview">
+            <div class="thumbnail-row">
+                <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                    <img class="thumbnail" src="thumbnail/thumbnail-1 (1).webp">
+                </a>
+                <div class="video-time">
+                    14:20
+                </div>
+            </div>
+
+            <div class="video-info-grid">
+                <div class="displaypic">
+                    
+                    <a href="https://www.youtube.com/@mkbhd">
+                        <div class="channel-info" >
+                            <img class="channel-photo" src="channel logo/channel-1.jpeg">
+                            
+                            <div class="tooltip" >
+                                
+                                <img class="channel-photo" src="channel logo/channel-1.jpeg">
+                                <div style="display: flex;
+                                flex-direction: column;
+                                font-weight: bolder;">
+                                    Marques Brownlee
+                                    <div style="font-size: 14px; color: rgb(0, 0, 0,0.5); margin-top: 3px;" >
+                                        15M subscribers
+                                    </div>
+
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="about">
+                    <a href="https://www.youtube.com/watch?v=n2RNcPRtAiY">
+                        <p class="video-name">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                    </a>
+                    <a href="https://www.youtube.com/@mkbhd">
+                        <p class="creator-name">
+                            Marques Brownlee
+                        </p>
+                    </a>
+                    <p class="description">3.4M views · 6 months ago</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnail/thumbnail-2.webp">
+
+                
+
+                <div class="video-time">
+                    8:22
+                </div>
+            </div>
+
+            <div class="video-info-grid">
+                <div class="displaypic">
+                    
+                   
+                
+
+                    <div class="channel-info" >
+                        <img class="channel-photo" src="channel logo/channel-2.jpeg">
+                        <div class="tooltip" >
+                            
+                            <img class="channel-photo" src="channel logo/channel-2.jpeg">
+                            <div style="display: flex;
+                            flex-direction: column;
+                            font-weight: bolder;">
+                                 Markiplier
+                                <div style="font-size: 12px; color: rgb(0, 0, 0,0.5); margin-top: 3px;" >
+                                    15M subscribers
+                                </div>
+
+
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+                    
+
+                </div>
+                <div class="about">
+                    <p class="video-name">Try Not To Laugh Challenge #9</p>
+                    <p class="creator-name">
+                        Markiplier
+                    </p>
+                    <p class="description">19M views · 4 years ago</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnail/thumbnail-3 (1).webp">
+                <div class="video-time">
+                    9:13
+                </div>
+            </div>
+
+            <div class="video-info-grid">
+                <div class="displaypic">
+                    <img class="channel-photo" src="channel logo/channel-3.jpeg">
+
+                </div>
+                <div class="about">
+                    <p class="video-name">
+                        Crazy Tik Toks Taken Moments Before DISASTER</p>
+                    <p class="creator-name">
+
+
+
+                        SSSniperWolf
+                    </p>
+                    <p class="description">12M views · 1 year ago</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnail/thumbnail-4.webp">
+                <div class="video-time">
+                    22:09
+                </div>
+            </div>
+
+            <div class="video-info-grid">
+                <div class="displaypic">
+                    <img class="channel-photo" src="channel logo/channel-4.jpeg">
+
+                </div>
+
+                <div class="about">
+                    <p class="video-name">
+                        The Simplest Math Problem No One Can Solve - Collatz Conjecture
+
+                    </p>
+                    <p class="creator-name">
+                        Veritasium
+                    </p>
+                    <p class="description">18M views · 4 months ago</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnail/thumbnail-5.webp">
+                <div class="video-time">
+                    11:17
+                </div>
+            </div>
+
+            <div class="video-info-grid">
+                <div class="displaypic">
+                    <img class="channel-photo" src="channel logo/channel-5.jpeg">
+                </div>
+                <div class="about">
+                    <p class="video-name">
+                        Kadane's Algorithm to Maximum Sum Subarray Problem
+                    </p>
+                    <p class="creator-name">
+                        CS Dojo
+                    </p>
+                    <p class="description">519K views · 5 years ago</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-preview">
+            <div class="thumbnail-row">
+                <img class="thumbnail" src="thumbnail/thumbnail-6.webp">
+                <div class="video-time">
+                    19:59
+                </div>
+            </div>
+
+            <div class="video-info-grid">
+                <div class="displaypic">
+                    <img class="channel-photo" src="channel logo/channel-6.jpeg">
+                </div>
+                <div class="about">
+                    <p class="video-name">
+                        Anything You Can Fit In The Circle I'll Pay For
+                    </p>
+                    <p class="creator-name">
+                        MrBeast
+                    </p>
+                    <p class="description">141M views · 1 year ago</p>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+
+</body>
+
+</html>
